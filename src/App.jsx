@@ -3,6 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import HomeLayout from './Layout/HomeLayout'
 import { Accordian, Home } from './Pages'
 import StarRating from './Pages/Project2/StarRating'
+import ImageSlider from './Pages/Project3/ImageSlider'
 function App() {
   
   return (<>
@@ -12,6 +13,7 @@ function App() {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/project1' element={<Accordian/>}></Route>
             <Route path='/project2' element={<StarRating/>}></Route>
+            <Route path='/project3' element={<ImageSlider/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
