@@ -4,6 +4,10 @@ import HomeLayout from './Layout/HomeLayout'
 import { Accordian, Home } from './Pages'
 import StarRating from './Pages/Project2/StarRating'
 import ImageSlider from './Pages/Project3/ImageSlider'
+import InfiniteScroll from './Pages/Project4/infiniteScroll'
+
+import Productpage from './Pages/Project4/Productpage'
+import Treeview from './Pages/Project5/Treeview'
 function App() {
   
   return (<>
@@ -14,6 +18,11 @@ function App() {
             <Route path='/project1' element={<Accordian/>}></Route>
             <Route path='/project2' element={<StarRating/>}></Route>
             <Route path='/project3' element={<ImageSlider/>}></Route>
+            <Route path='/project4' >
+              <Route path='product' element={<InfiniteScroll/>} />
+              <Route path='product/:id' element={<Productpage/>}></Route>
+            </Route>
+            <Route path='/project5' element={<Treeview/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
