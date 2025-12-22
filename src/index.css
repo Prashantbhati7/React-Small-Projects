@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@utility project-list{
+    @apply transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400 mt-4 
+}

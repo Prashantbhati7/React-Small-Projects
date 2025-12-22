@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 function Home() {
   return (
-    <div className='text-white    text-2xl text-center'>
-        <ul className='list-inside '>
-            <li className=''> <Link className='text-center transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400 ' to={'/project1'}>Project 1 (Accordian) </Link> </li>
-            <li ><Link className='text-center transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400' to={'/project2'}>Project 2 (Start Rating)</Link> </li>
-            <li><Link className='text-center transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400' to={'/project3'}>Project 3 (Image Slider)</Link></li>
-            <li><Link className='text-center transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400' to={'/project4/product'}>Project 4 (Mini Ecommerce)</Link></li>
-            <li><Link className='text-center transition delay-150 duration-200 ease-in-out text-shadow-sm hover:text-shadow-blue-400' to={'/project5'}>Project 5 (Tree View )</Link></li>
+    <div className='text-white  flex justify-center  text-2xl '>
+        <ul className='list-inside mt-10 '>
+            <li className='project-list'> <Link  to={'/project1'}>Project 1 (Accordian) </Link> </li>
+            <li className='project-list ' ><Link to={'/project2'}>Project 2 (Start Rating)</Link> </li>
+            <li className='project-list '><Link  to={'/project3'}>Project 3 (Image Slider)</Link></li>
+            <li className='project-list '><Link  to={'/project4/product'}>Project 4 (Mini Ecommerce)</Link></li>
+            <li className='project-list '><Link  to={'/project5'}>Project 5 (Tree View )</Link></li>
         </ul>
     </div>
   )
