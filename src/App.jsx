@@ -8,6 +8,8 @@ import InfiniteScroll from './Pages/Project4/infiniteScroll'
 
 import Productpage from './Pages/Project4/Productpage'
 import Treeview from './Pages/Project5/Treeview'
+import QrCodeGenertaor from './Pages/Project6/QrCodeGenertaor'
+import ScrollIndicator from './Pages/Project7/ScrollIndicator'
 function App() {
   
   return (<>
@@ -23,6 +25,8 @@ function App() {
               <Route path='product/:id' element={<Productpage/>}></Route>
             </Route>
             <Route path='/project5' element={<Treeview/>}></Route>
+            <Route path='/project6' element={<QrCodeGenertaor/>}></Route>
+            <Route path='/project7' element={<ScrollIndicator/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
