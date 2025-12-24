@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import { BrowserRouter,Routes,Route, ScrollRestoration } from 'react-router-dom'
 import HomeLayout from './Layout/HomeLayout'
 import { Accordian, Home } from './Pages'
 import StarRating from './Pages/Project2/StarRating'
@@ -10,6 +10,9 @@ import Productpage from './Pages/Project4/Productpage'
 import Treeview from './Pages/Project5/Treeview'
 import QrCodeGenertaor from './Pages/Project6/QrCodeGenertaor'
 import ScrollIndicator from './Pages/Project7/ScrollIndicator'
+import Tabs from './Pages/Project8/tabs'
+import PopUp from './Pages/Project9/PopUp'
+import ScrolltoSection from './Pages/Project10/ScrolltoSection'
 function App() {
   
   return (<>
@@ -27,6 +30,9 @@ function App() {
             <Route path='/project5' element={<Treeview/>}></Route>
             <Route path='/project6' element={<QrCodeGenertaor/>}></Route>
             <Route path='/project7' element={<ScrollIndicator/>}></Route>
+            <Route path='/project8' element={<Tabs/> }></Route>
+            <Route path='/project9' element={<PopUp></PopUp>}></Route>
+            <Route path='/project10' element={<ScrolltoSection/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
