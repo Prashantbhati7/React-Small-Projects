@@ -14,6 +14,7 @@ function Home() {
             <li className='project-list '><Link  to={'/project8'}>Project 8 (Tabs)</Link></li>
             <li className='project-list '><Link  to={'/project9'}>Project 8 (PopUp)</Link></li>
             <li className='project-list '><Link  to={'/project10'}>Project 9(Scroll to particlar Section)</Link></li>
+            <li className='project-list '><Link  to={'/project11'}>Project 10(ThemeSwitcher)</Link></li>
         </ul>
     </div>
   )

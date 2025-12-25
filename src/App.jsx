@@ -13,6 +13,7 @@ import ScrollIndicator from './Pages/Project7/ScrollIndicator'
 import Tabs from './Pages/Project8/tabs'
 import PopUp from './Pages/Project9/PopUp'
 import ScrolltoSection from './Pages/Project10/ScrolltoSection'
+import ThemeSwitcher from './Pages/Project11/ThemeSwitcher'
 function App() {
   
   return (<>
@@ -33,6 +34,7 @@ function App() {
             <Route path='/project8' element={<Tabs/> }></Route>
             <Route path='/project9' element={<PopUp></PopUp>}></Route>
             <Route path='/project10' element={<ScrolltoSection/>}></Route>
+            <Route path='/project11' element={<ThemeSwitcher/>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
